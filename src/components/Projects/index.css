@@ -1,0 +1,172 @@
+.project-each-card {
+    width: 30%;
+    height: 10%;
+    border: 1px solid silver;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 36px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+    animation: cardSlideIn 0.6s ease forwards;
+}
+
+.project-each-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-color: #305eff;
+}
+
+@keyframes cardSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.project-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #5e73be;
+    font-size: 22px;
+}
+
+.project-description {
+    color: rgb(114, 109, 109);
+}
+
+.project-img {
+    border-radius: 4px;
+}
+
+.project-btns {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.explore-btn {
+    background-color: #305eff;
+    border: 1px solid silver;
+    color: white;
+    padding: 7px;
+    font-weight: 700;
+    width: 50%;
+    height: 40px;
+    border-radius: 4px;
+    margin: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    border-width: 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.live-icon {
+    margin: 3px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.github-btn {
+    background-color: transparent;
+    padding: 10px;
+    border-width: 0px;
+    font-weight: 700;
+    width: 50%;
+    height: 40px;
+    border-radius: 4px;
+    margin: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid silver;
+    text-align: center;
+}
+
+.git-icon {
+    margin: 3px;
+    margin-right: 10px;
+}
+
+.all-project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    /* background-color: red; */
+}
+
+.main-project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-btn:hover {
+    border: 1px solid #748eee;
+}
+
+.explore-btn:hover {
+    background-color: #3c63f0;
+}
+
+.project-img:hover {
+    transition: 0ms;
+}
+
+@media(max-width: 768px) {
+    .main-project-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+
+    }
+
+    .all-project-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-top: 20px;
+        /* background-color: red; */
+    }
+
+    .project-each-card {
+        width: 95%;
+        height: 10%;
+        border: 1px solid silver;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        padding: 10px;
+        margin-right: 0;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        background-color: white;
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+        animation: cardSlideIn 0.6s ease forwards;
+    }
+
+    .project-name {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-weight: 700;
+        color: #5e73be;
+    }
+}

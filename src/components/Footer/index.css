@@ -1,0 +1,111 @@
+.footer-main {
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    height: 250px;
+    color: white;
+    padding-top: 60px;
+    margin-top: 80px;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-name {
+    font-weight: 900;
+    font-style: bold;
+    font-size: 25px;
+    letter-spacing: 1.2rem;
+    text-align: center;
+}
+
+.footer-skill {
+    color: rgb(132, 131, 131);
+    text-align: center;
+    margin-left: -16px;
+}
+
+.footer-social-icons {
+    background-color: rgb(41, 41, 41);
+    border-radius: 100%;
+    padding: 13px;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 23px;
+}
+
+.footer-social-icons:hover {
+    background-color: #305eff;
+}
+
+.footer-top-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-hr {
+    color: rgb(71, 70, 70);
+    margin-top: -25px;
+    border: none;
+    height: 2px;
+    background-color: rgb(71, 70, 70);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rights {
+    color: silver;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-nav-links {
+    margin-right: 20px;
+    font-weight: 600;
+    color: silver;
+}
+
+@media(max-width: 768px) {
+    .footer-top-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-main {
+        background-color: rgb(0, 0, 0);
+        background-size: cover;
+        height: 30%;
+        color: white;
+        padding-top: 60px;
+        margin-top: 80px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .footer-skill {
+        color: rgb(132, 131, 131);
+        text-align: center;
+        margin-left: -16px;
+        margin-bottom: 40px;
+    }
+
+    .footer-links-container {
+        margin-bottom: 40px;
+    }
+
+    .footer-social-icons {
+        background-color: rgb(41, 41, 41);
+        border-radius: 50%;
+        padding: 13px;
+        margin-right: 20px;
+        font-size: 22px;
+    }
+
+    .rights {
+        color: silver;
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+}
