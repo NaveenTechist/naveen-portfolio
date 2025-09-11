@@ -1,7 +1,7 @@
 .each-marquee {
     display: flex;
     flex-direction: column;
-    margin: 8px 10px;
+    margin: 0 20px;
     padding: 8px 12px;
     background: transparent;
     border: none;
@@ -10,7 +10,8 @@
     position: relative;
     flex-shrink: 0;
     white-space: nowrap;
-    max-width: 80px;
+    width: 80px;
+    min-width: 80px;
 }
 
 .each-marquee:hover {
@@ -100,11 +101,17 @@
     position: relative;
 }
 
-/* Ensure marquee content flows properly */
+/* Ensure marquee content flows properly with proper spacing */
 .skillsarrange .rfm-marquee>div {
     position: relative;
     display: flex;
     align-items: center;
+    gap: 0;
+}
+
+/* Ensure proper spacing between marquee elements */
+.skillsarrange .rfm-marquee .each-marquee {
+    margin-right: 0;
 }
 
 
@@ -184,11 +191,11 @@
     .each-marquee {
         display: flex;
         flex-direction: column;
-        margin: 6px 8px;
+        margin: 0 15px;
         padding: 6px 10px;
         flex: 0 0 auto;
+        width: 70px;
         min-width: 70px;
-        max-width: 70px;
         box-sizing: border-box;
         background: transparent;
         border: none;
