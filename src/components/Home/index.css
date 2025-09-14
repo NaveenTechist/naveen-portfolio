@@ -3,7 +3,11 @@
     outline: none;
 }
 
-/* Apply cursor pointer only to interactive elements */
+@font-face {
+    font-family: 'Vanniel';
+    src: url('/fonts/Vanniel.otf') format('truetype');
+}
+
 button,
 a,
 .scroll-downs,
@@ -488,7 +492,7 @@ a,
         margin-right: 20px;
         width: 35vw;
         font-weight: 500;
-        height: 40px;
+        height: 37px;
         font-size: 4vw;
         text-align: center;
         margin-top: -60px;
@@ -504,7 +508,7 @@ a,
         margin-right: 20px;
         width: 35vw;
         font-weight: 600;
-        height: 44px;
+        height: 37px;
         font-size: 17px;
         margin-top: -60px;
         margin-bottom: 10px;

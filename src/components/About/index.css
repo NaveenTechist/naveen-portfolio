@@ -1,17 +1,19 @@
 .each-marquee {
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    /* margin: 0 20px; */
     padding: 8px 12px;
     background: transparent;
     border: none;
-    box-shadow: none;
+    /* box-shadow: none; */
     transition: all 0.3s ease;
     position: relative;
-    flex-shrink: 0;
-    white-space: nowrap;
-    width: 80px;
-    min-width: 80px;
+    /* flex-shrink: 0; */
+    /* white-space: nowrap; */
+    /* width: 80px; */
+    /* min-width: 80px;
+    margin-right: 100px; */
+    margin: 20px;
 }
 
 .each-marquee:hover {
@@ -191,18 +193,19 @@
     .each-marquee {
         display: flex;
         flex-direction: column;
-        margin: 0 15px;
+        /* margin: 0 15px; */
         padding: 6px 10px;
-        flex: 0 0 auto;
+        /* flex: 0 0 auto; */
         width: 70px;
-        min-width: 70px;
+        /* min-width: 70px; */
         box-sizing: border-box;
         background: transparent;
         border: none;
-        box-shadow: none;
+        /* box-shadow: none; */
         position: relative;
-        flex-shrink: 0;
-        white-space: nowrap;
+        /* flex-shrink: 0;
+        white-space: nowrap; */
+        margin-bottom: -90px;
     }
 
     .each-marquee:hover {

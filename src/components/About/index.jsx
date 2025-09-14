@@ -115,7 +115,7 @@ const About = () => {
                 <div className="my-skills" ref={skillsRef}>
                     <h2 className={`text-4xl font-bold get-to-know-me skills-left fade-in-right ${skillsInView ? 'visible' : ''}`}>MY SKILLS</h2>
                     <div className={`skillsarrange fade-in-up ${skillsInView ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
-                        <Marquee pauseOnHover gradient={false} speed={40} className='marquee-container'>
+                        <Marquee pauseOnHover gradient={true} speed={40} className='marquee-container'>
                             <div className="flex items-center gap-2 mx-6 text-xl text-zinc-700 each-marquee">
                                 <FaHtml5 className="text-6xl text-[#E34F26]" />
                                 <p className="skill-name">HTML</p>
@@ -172,7 +172,7 @@ const About = () => {
                             </div>
                         </Marquee>
 
-                        <Marquee pauseOnHover gradient={false} speed={40} direction="right" className="mt-6">
+                        <Marquee pauseOnHover gradient={true} speed={40} direction="right" className="mt-6">
                             <div className="flex items-center gap-2 mx-6 text-xl text-zinc-700 each-marquee">
                                 <FaHtml5 className="text-6xl text-[#E34F26]" />
                                 <p className="skill-name">HTML</p>
