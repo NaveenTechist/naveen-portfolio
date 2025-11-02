@@ -116,32 +116,43 @@ const Home = () => {
                     <Header />
                     <div className='interface'>
                         <div className='interface-body' ref={heroRef}>
-                            <img src="https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1757159796/pngegg_2_rlgab2.jpg?_s=public-apps" className='drone-img floating' alt="drone" />
-                            <img src="https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1757162832/laptop2_rjepfc.jpg?_s=public-apps" className='laptop-img floating2' alt="drone" />
-                            <img src="https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1757165147/pendrive_qlym4a.jpg?_s=public-apps" className='pendrive-img floating3' alt="drone" />
-                            <img src="https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1757219692/paper_boat_jtl4wq.jpg?_s=public-apps" className='paper-img floating4' alt="drone" />
-                            <h1 className={`name name-for-desktop fade-in ${heroInView ? 'visible' : ''}`}>I'M NAVEEN</h1>
-                            <div className='mobile-name'>
-                                <h1 className={`name name-margin-remove fade-in ${heroInView ? 'visible' : ''}`}>I'M</h1>
-                                <h1 className={`name fade-in ${heroInView ? 'visible' : ''}`}>NAVEEN</h1>
-                            </div>
-                            <div className="cycling-text-container">
-                                <p className={`mern-stack cycling-text ${heroInView ? 'visible' : ''}`} data-text="MERN Stack Developer">MERN Stack Developer</p>
-                                <p className={`mern-stack cycling-text ${heroInView ? 'visible' : ''}`} data-text="Graphic Designer">Graphic Designer</p>
-                                <p className={`mern-stack cycling-text ${heroInView ? 'visible' : ''}`} data-text="AI/ML Enthusiasm">AI/ML Enthusiast & Practitioner</p>
-                            </div>
-                            <div className={`fade-in ${heroInView ? 'visible' : ''}`} style={{ transitionDelay: '1.4s' }}>
-                                <a target='_blank' href='https://drive.google.com/file/d/1UcGD23wCJpB3EEIJ5GvVZwPMb4qr0WBd/view?usp=drive_link'><button type='button' className='resume'>Download Resume</button></a>
-                                <Link to="projects" smooth={true} duration={500}><button type='button' className='projects'>Projects</button></Link>
-                            </div>
-                        </div>
-                        <Link to="about" smooth={true} duration={800}>
-                            <div className="scroll-downs">
-                                <div className="mousey">
-                                    <div className="scroller"></div>
+                            <div className='interface-body-left'>
+                                {/* <img src="https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1757159796/pngegg_2_rlgab2.jpg?_s=public-apps" className='drone-img floating' alt="drone" />
+                                <img src="https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1757162832/laptop2_rjepfc.jpg?_s=public-apps" className='laptop-img floating2' alt="drone" />
+                                <img src="https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1757165147/pendrive_qlym4a.jpg?_s=public-apps" className='pendrive-img floating3' alt="drone" />
+                                <img src="https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1757219692/paper_boat_jtl4wq.jpg?_s=public-apps" className='paper-img floating4' alt="drone" /> */}
+                                <h1 className={`hello name-for-desktop fade-in ${heroInView ? 'visible' : ''}`}>Hello!</h1>
+                                <h1 className={`name name-for-desktop fade-in ${heroInView ? 'visible' : ''}`}>I’m <span className='name-span'>Naveen,</span></h1>
+                                <h1 className='sub-name'>MERN-Stack Developer &</h1>
+                                <h1 className='sub-name'>Problem Solver</h1>
+                                <p className='intro-para'>I build scalable web applications with React, Node.js, and AI-driven logic to redefine how technology connects with people.</p>
+                                {/* <div className='mobile-name'>
+                                    <h1 className={`name name-margin-remove fade-in ${heroInView ? 'visible' : ''}`}>I'M</h1>
+                                    <h1 className={`name fade-in ${heroInView ? 'visible' : ''}`}>NAVEEN</h1>
+                                </div> */}
+                                {/* <div className="cycling-text-container">
+                                    <p className={`mern-stack cycling-text ${heroInView ? 'visible' : ''}`} data-text="MERN Stack Developer">MERN Stack Developer</p>
+                                    <p className={`mern-stack cycling-text ${heroInView ? 'visible' : ''}`} data-text="Graphic Designer">Graphic Designer</p>
+                                    <p className={`mern-stack cycling-text ${heroInView ? 'visible' : ''}`} data-text="AI/ML Enthusiasm">AI/ML Enthusiast & Practitioner</p>
+                                </div> */}
+                                <div className={`fade-in ${heroInView ? 'visible' : ''}`} style={{ transitionDelay: '1.4s' }}>
+                                    <a target='_blank' href='https://drive.google.com/file/d/1StnFxv5oquFiPO-wekvXG-vO-IcvVgfM/view?usp=sharing'><button type='button' className='resume'>RESUME</button></a>
+                                    <Link to="projects" smooth={true} duration={500}><button type='button' className='projects'>Projects</button></Link>
                                 </div>
                             </div>
-                        </Link>
+                            <div className="profile-container">
+                                <img src="https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1762010839/FinalPort_z9doir.jpg?_s=public-apps" className='profile-img' alt="profile" />
+                            </div>
+                        </div>
+                        <div className='scroll-downs-container'>
+                            <Link to="about" smooth={true} duration={800}>
+                                <div className="scroll-downs">
+                                    <div className="mousey">
+                                        <div className="scroller"></div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
                         <div className='chatbot-container'>
                             <ChatBot
                                 config={chatbotConfig}

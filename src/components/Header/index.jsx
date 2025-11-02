@@ -1,5 +1,5 @@
 import { Link, Element } from 'react-scroll'
-import { GiHamburgerMenu } from "react-icons/gi";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import Popup from 'reactjs-popup'
 import { useState } from 'react'
@@ -28,7 +28,7 @@ const Header = () => {
                         trigger={
                             <button type='button' onClick={toggleMenu}>
                                 <div className={`burger-container ${isMenuOpen ? 'open' : ''}`}>
-                                    <GiHamburgerMenu className={`burger-icon ${isMenuOpen ? 'hidden' : ''}`} />
+                                    <RxHamburgerMenu className={`burger-icon ${isMenuOpen ? 'hidden' : ''}`} />
                                     <RxCross2 className={`cross-icon ${isMenuOpen ? 'visible' : ''}`} />
                                 </div>
                             </button>

@@ -50,11 +50,11 @@ const About = () => {
 
             // Animate coding days (640)
             let currentDays = 0;
-            const daysIncrement = 640 / steps;
+            const daysIncrement = 690 / steps;
             const daysInterval = setInterval(() => {
                 currentDays += daysIncrement;
                 if (currentDays >= 640) {
-                    setCodingDays(640);
+                    setCodingDays(690);
                     clearInterval(daysInterval);
                 } else {
                     setCodingDays(Math.floor(currentDays));
@@ -108,35 +108,35 @@ const About = () => {
                     <p className={`get-more-para fade-in-left ${aboutInView ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
                         I am a <span className="underline">MERN Stack Developer,</span> Graphic Designer, and AI/ML Enthusiast.
                         <span className="underline">Development, Creativity, and Innovation</span> are my core strengths—and my passion.</p>
-                    <p className={`get-more-para fade-in-left ${aboutInView ? 'visible' : ''}`} style={{ transitionDelay: '0.4s' }}>With a strong drive to grow and learn every day, Hands-on with <span className="underline"> AI LLMs, Agents, ML & DS </span>. I’ve also been maintaining a <span className="underline"> 640+ days</span> <img className="gif" src="https://media.tenor.com/KXakpzVoGJgAAAAm/feuer-fire.webp" /> coding challenge streak, which has shaped me with <span className="underline"> industry-ready skills </span> and real-world project experience.</p>
+                    <p className={`get-more-para fade-in-left ${aboutInView ? 'visible' : ''}`} style={{ transitionDelay: '0.4s' }}>With a strong drive to grow and learn every day, Hands-on with <span className="underline"> AI LLMs, Agents, ML & DS </span>. I’ve also been maintaining a <span className="underline"> 690+ days</span> <img className="gif" src="https://media.tenor.com/KXakpzVoGJgAAAAm/feuer-fire.webp" /> coding challenge streak, which has shaped me with <span className="underline"> industry-ready skills </span> and real-world project experience.</p>
                     <p className={`get-more-para fade-in-left ${aboutInView ? 'visible' : ''}`} style={{ transitionDelay: '0.6s' }}>I’m a <span className="underline"> Final Year B.Tech student in Information Technology </span> from Vijayawada, Andhra Pradesh. I’ve built responsive MERN applications and sharpened my frontend design skills to create smooth, user-friendly experiences. <span className="underline"> I’m open to opportunities </span> to learn, grow, and contribute.</p>
                     <Link to="contact"><button className={`contact fade-in-left ${aboutInView ? 'visible' : ''}`} style={{ transitionDelay: '0.8s' }}>Contact</button></Link>
                 </div>
                 <div className="my-skills" ref={skillsRef}>
                     <h2 className={`text-4xl font-bold get-to-know-me skills-left fade-in-right ${skillsInView ? 'visible' : ''}`}>MY SKILLS</h2>
                     <div className={`skillsarrange fade-in-up ${skillsInView ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
-                        <Marquee pauseOnHover gradient={true} speed={40} className='marquee-container'>
-                            <div className="flex items-center gap-2 mx-6 text-xl text-zinc-700 each-marquee">
+                        <Marquee pauseOnHover gradient={true} speed={40} direction="left" className='marquee-container'>
+                            <div className="each-marquee">
                                 <FaHtml5 className="text-6xl text-[#E34F26]" />
                                 <p className="skill-name">HTML</p>
                             </div>
 
-                            <div className="flex items-center gap-2 mx-6 text-xl text-zinc-700 each-marquee">
+                            <div className="each-marquee">
                                 <FaCss3Alt className="text-6xl text-[#1572B6]" />
                                 <p className="skill-name">CSS</p>
                             </div>
 
-                            <div className="flex items-center gap-2 mx-6 text-xl text-zinc-700 each-marquee">
+                            <div className="each-marquee">
                                 <SiBootstrap className="text-6xl text-[#7952B3]" />
                                 <p className="skill-name">Bootstrap</p>
                             </div>
 
-                            <div className="flex items-center gap-2 mx-6 text-xl text-zinc-700 each-marquee">
+                            <div className="each-marquee">
                                 <SiMysql className="text-6xl text-[#4479A1]" />
                                 <p className="skill-name">SQL</p>
                             </div>
 
-                            <div className="flex items-center gap-2 mx-6 text-xl text-zinc-700 each-marquee">
+                            <div className="each-marquee">
                                 <FaPython className="text-6xl text-[#3776AB]" />
                                 <p className="skill-name">Python</p>
                             </div>
