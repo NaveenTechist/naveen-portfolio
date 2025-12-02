@@ -1,39 +1,30 @@
-.each-marquee {
+.my-skills {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    /* margin: 0 20px; */
-    padding: 8px 12px;
-    background: white;
-    border: none;
-    /* box-shadow: none; */
-    transition: all 0.3s ease;
-    position: relative;
-    /* flex-shrink: 0; */
-    /* white-space: nowrap; */
-    /* width: 80px; */
-    /* min-width: 80px;
-    margin-right: 100px; */
-    margin: 20px;
-    width: 220px;
-    border: 1px solid rgb(220, 220, 220);
-    border-radius: 10px;
-    margin-right: 30px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 20px;
+    /* padding: 20px 0; */
 }
 
-.each-marquee:hover {
-    transform: translateY(-3px);
-}
+
+
+
+
+
+
+
 
 .skill-name {
     color: rgb(152, 156, 161);
     font-weight: 700;
     margin-top: 8px;
     text-align: center;
+    font-size: 20px;
+}
+
+.each-svg {
+    height: 80px;
+    width: 80px;
 }
 
 .get-to-know-me {
@@ -42,10 +33,17 @@
     font-size: 27px;
 }
 
+.skills-head-name {
+    margin-bottom: 20px;
+    color: rgb(85, 56, 17);
+    font-size: 27px;
+    margin-left: 70px;
+}
+
 .contact {
     background-color: transparent;
     border: 1px solid rgb(98, 92, 92);
-    border-radius: 4px;
+    border-radius: 60px;
     font-family: "Roboto";
     color: rgb(98, 92, 92);
     margin-right: 20px;
@@ -67,43 +65,44 @@
     text-align: left;
 }
 
-.my-skills {
-    margin-top: px;
-    margin-left: 30px;
+
+
+.profile-img-for-skills {
+    height: 550px;
+    width: 450px;
+    margin-left: 40px;
+    margin-top: -58px;
+    border-radius: 25%;
+    border: 2px solid rgb(52, 133, 255);
+}
+
+.skill-img-container {
     width: 50%;
-    /* background-color: red; */
 }
 
 .left-container {
-    width: 50% !important;
+    width: 70%;
+    margin-right: 40px;
 }
 
 .know-container {
     display: flex;
-    width: 95vw;
+    width: 100%;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 50px;
     background-color: rgba(255, 255, 255, 0.4) !important;
     padding: 40px 20px;
+    margin-left: 20px;
+
     border-radius: 15px;
-    position: relative;
-    z-index: 5;
+    /* position: relative;
+    z-index: 5; */
 }
 
 
 
-.skillsarrange {
-    width: 100%;
-    margin-top: 20px;
-    position: relative;
-}
 
-.marquee-container {
-    margin-bottom: 24px;
-    position: relative;
-    overflow: hidden;
-}
 
 /* Ensure vertical gap between stacked marquees (react-fast-marquee renders .rfm-marquee) */
 .skillsarrange .rfm-marquee {
@@ -147,20 +146,35 @@
         box-sizing: border-box;
     }
 
+    .profile-img-for-skills {
+        display: none;
+        height: 550px;
+        width: 450px;
+        margin-left: 40px;
+        margin-top: -58px;
+        border-radius: 25%;
+        border: 2px solid rgb(52, 133, 255);
+    }
+
+    .skill-img-container {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
     .know-container {
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 100vw;
         justify-content: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 50px;
         background-color: rgba(255, 255, 255, 0.4) !important;
-        padding: 20px 15px;
+        padding: 40px 20px;
+        margin-left: 20px;
+
         border-radius: 15px;
-        position: relative;
-        z-index: 5;
-        box-sizing: border-box;
+        /* position: relative;
+        z-index: 5; */
     }
 
     .left-container {
@@ -179,46 +193,13 @@
         /* background-color: red; */
     }
 
-    .get-to-know-me {
-        margin-bottom: 20px;
-        color: rgb(85, 56, 17);
-        font-size: 25px;
-        text-align: left;
-    }
 
     .skills-left {
         margin-left: 0;
         padding-left: 0;
     }
 
-    .skillsarrange {
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
-    .each-marquee {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px 15px;
-        width: 140px;
-        min-width: 140px;
-        box-sizing: border-box;
-        background: white;
-        border: 2px solid rgb(220, 220, 220);
-        border-radius: 15px;
-        margin: 0 35px;
-        margin-right: 40px;
-        flex-shrink: 0;
-        white-space: nowrap;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        transition: all 0.3s ease;
-    }
 
     .each-marquee:hover {
         transform: translateY(-2px);
@@ -237,13 +218,6 @@
         text-align: center;
     }
 
-    .marquee-container {
-        margin-bottom: 30px;
-        margin-top: 30px;
-        padding: 20px 0;
-        width: 100%;
-        overflow: hidden;
-    }
 
     /* Proper marquee spacing */
     .skillsarrange .rfm-marquee {
@@ -352,4 +326,11 @@
 .con-para {
     color: rgb(119, 115, 115);
     font-size: 25px;
+}
+
+.skills-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }

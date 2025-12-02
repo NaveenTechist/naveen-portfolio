@@ -141,7 +141,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="profile-container">
-                                <img src="https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1762010839/FinalPort_z9doir.jpg?_s=public-apps" className='profile-img' alt="profile" />
+                                <img src="https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1764685881/PortfolioImgFeather_cvuzh0.jpg?_s=public-apps" className='profile-img' alt="profile" />
                             </div>
                         </div>
                         <div className='scroll-downs-container'>

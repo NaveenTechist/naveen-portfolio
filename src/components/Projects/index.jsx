@@ -13,6 +13,13 @@ const projectsData = [
         webUrl: 'https://naveentechist45.ccbp.tech/login',
     },
     {
+        imgUrl: 'https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1762090813/Screenshot_716_zqqoqj.jpg?_s=public-apps',
+        name: 'DSA Practice',
+        description: "DSA Practice is a structured repository of C++ solutions across core topics—arrays, sorting, recursion, basic-math problems—designed for deep algorithmic practice and real-world problem solving. It mirrors top company-question patterns and emphasises clarity, efficiency and code readability.",
+        gitHub: 'https://github.com/NaveenTechist/DSA-Practice',
+        webUrl: 'https://github.com/NaveenTechist/DSA-Practice',
+    },
+    {
         imgUrl: 'https://res.cloudinary.com/dgjwz2ydp/image/upload/fl_preserve_transparency/v1757075000/Screenshot_645_g1clkd.jpg?_s=public-apps',
         name: 'Jobby App',
         description: "Jobby App is a smart job search portal that fetches job opportunities from the server in real-time. It displays dynamic listings with powerful filtering options. Each job post includes subtle skill cues, helping users tailor resumes, sharpen grammar, and improve their pitch in a professional, engaging way.",
