@@ -10,10 +10,11 @@
 .skills-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 50px;
   width: 100%;
+  gap: 40px;
 }
 
 .each-marquee {
@@ -29,13 +30,27 @@
   border: 1px solid rgb(220, 220, 220);
   border-radius: 10px;
   text-align: center;
-  box-sizing: border-box;
-  margin-right: 40px;
-  margin-bottom: 40px;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out,
+    box-shadow 0.3s ease-out,
+    background-color 0.3s ease-out,
+    border-color 0.3s ease-out;
 }
 
 .each-marquee:hover {
-  box-shadow: 0px 16px 4px #bfbfbf !important;
+  box-shadow: 0px 10px 4px #dcdcdc !important;
+}
+
+/* 🥇 Staggered Fade-Up: Premium, subtle entrance */
+.stagger-fade-up {
+  opacity: 0;
+  transform: translateY(24px) scale(0.98);
+}
+
+.stagger-fade-up.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 @media (max-width: 768px) {

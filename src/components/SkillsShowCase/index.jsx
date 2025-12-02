@@ -1,10 +1,19 @@
 import './index.css'
+import { useInView } from 'react-intersection-observer'
 
 const SkillsShowCase = () => {
+    const { ref: skillsRef, inView: skillsInView } = useInView({
+        threshold: 0.15,
+        triggerOnce: true,
+    })
+
     return (
         // <Marquee pauseOnHover gradient={true} speed={40} direction="left" className='marquee'>
-        <div className='skills-icons'>
-            <div className="each-marquee">
+        <div className='skills-icons' ref={skillsRef}>
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0s' }}
+            >
                 <svg viewBox="0 0 452 520" className="each-svg">
                     <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
                     <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
@@ -20,7 +29,10 @@ const SkillsShowCase = () => {
                 <p className="skill-name">HTML</p>
             </div>
 
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.05s' }}
+            >
                 <svg viewBox="0 0 512 512" className="each-svg">
                     <path
                         fill="#264de4"
@@ -38,7 +50,10 @@ const SkillsShowCase = () => {
                 </svg>
                 <p className="skill-name">CSS</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.1s' }}
+            >
                 <svg viewBox="0 0 1052 1052">
                     <path fill="#f0db4f" d="M0 0h1052v1052H0z" />
                     <path
@@ -48,7 +63,10 @@ const SkillsShowCase = () => {
                 </svg>
                 <p className="skill-name">Javascript</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.15s' }}
+            >
                 <svg
                     viewBox="0 0 569 512"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -79,7 +97,10 @@ const SkillsShowCase = () => {
 
                 <p className="skill-name">Node.js</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.2s' }}
+            >
                 <svg preserveAspectRatio="xMidYMid" viewBox="0 0 512 228">
                     <defs>
                         <linearGradient x1="57.7%" y1="2%" x2="57.7%" y2="94.4%" id="sqlite__a">
@@ -107,7 +128,10 @@ const SkillsShowCase = () => {
                 </svg>
                 <p className="skill-name">SQL</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.25s' }}
+            >
                 <svg fill="none" viewBox="0 0 120 257">
                     <path
                         fill="#00ED64"
@@ -116,7 +140,10 @@ const SkillsShowCase = () => {
                 </svg>
                 <p className="skill-name">MongoDB</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.3s' }}
+            >
                 <svg viewBox="0 0 256 204" preserveAspectRatio="xMidYMid">
                     <path
                         fill="#7E13F8"
@@ -125,7 +152,10 @@ const SkillsShowCase = () => {
                 </svg>
                 <p className="skill-name">Bootstrap</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.35s' }}
+            >
                 <svg fill="none" viewBox="16 16 32 32">
                     <path
                         fill="url(#python__a)"
@@ -162,7 +192,10 @@ const SkillsShowCase = () => {
                 </svg>
                 <p className="skill-name">Python</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.4s' }}
+            >
                 <svg preserveAspectRatio="xMidYMid" viewBox="0 0 256 288">
                     <path
                         fill="#649AD2"
@@ -187,7 +220,10 @@ const SkillsShowCase = () => {
                 </svg>
                 <p className="skill-name">C++</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.45s' }}
+            >
                 <svg preserveAspectRatio="xMidYMid" viewBox="0 0 256 256">
                     <path
                         d="M251.17 116.6 139.4 4.82a16.49 16.49 0 0 0-23.31 0l-23.21 23.2 29.44 29.45a19.57 19.57 0 0 1 24.8 24.96l28.37 28.38a19.61 19.61 0 1 1-11.75 11.06L137.28 95.4v69.64a19.62 19.62 0 1 1-16.13-.57V94.2a19.61 19.61 0 0 1-10.65-25.73L81.46 39.44 4.83 116.08a16.49 16.49 0 0 0 0 23.32L116.6 251.17a16.49 16.49 0 0 0 23.32 0l111.25-111.25a16.5 16.5 0 0 0 0-23.33"
@@ -196,7 +232,10 @@ const SkillsShowCase = () => {
                 </svg>
                 <p className="skill-name">Git</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.5s' }}
+            >
                 <svg viewBox="0 0 1024 1024" fill="none">
                     <path
                         fillRule="evenodd"
@@ -208,7 +247,10 @@ const SkillsShowCase = () => {
                 </svg>
                 <p className="skill-name">GitHub</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.55s' }}
+            >
                 <svg fill="none" viewBox="0 0 100 100">
                     <mask
                         id="vscode__a"
@@ -316,7 +358,10 @@ const SkillsShowCase = () => {
                 </svg>
                 <p className="skill-name">VS Code</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.6s' }}
+            >
                 <svg
                     id="cursor_dark__Ebene_1"
                     version="1.1"
@@ -326,7 +371,10 @@ const SkillsShowCase = () => {
                 </svg>
                 <p className="skill-name">Cursor</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.65s' }}
+            >
                 <svg viewBox="0 0 83 80" fill="none">
                     <g clipPath="url(#photoshop__clip0_906_1855)">
                         <path
@@ -350,7 +398,10 @@ const SkillsShowCase = () => {
                 </svg>
                 <p className="skill-name">Photoshop</p>
             </div>
-            <div className="each-marquee">
+            <div
+                className={`each-marquee stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                style={{ transitionDelay: '0.7s' }}
+            >
                 <svg viewBox="0 0 83 80" fill="none">
                     <g clipPath="url(#premiere__clip0_906_1820)">
                         <path
