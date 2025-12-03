@@ -328,9 +328,21 @@
     font-size: 25px;
 }
 
-.skills-icons-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+/* .skills-icons-container {
+    
+} */
+
+.marquee-relevent-skills {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.each-mar-skills {
+    margin-right: 70px;
+    font-size: 50px;
+    font-weight: bold;     
+    color: silver;
+}
+
+.each-mar-skills:hover{
+    color: rgb(36, 35, 35);
 }

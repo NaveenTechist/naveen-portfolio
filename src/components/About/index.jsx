@@ -1,4 +1,4 @@
-// import Marquee from "react-fast-marquee";
+import Marquee from "react-fast-marquee";
 import SkillsShowCase from "../SkillsShowCase/index.jsx"
 import './index.css'
 import { Link, Element } from 'react-scroll'
@@ -104,6 +104,22 @@ const About = () => {
             <div className="my-skills" ref={skillsRef}>
                 <h2 className={`text-4xl font-bold skills-head-name skills-left fade-in-right ${skillsInView ? 'visible' : ''}`}>TECHNICAL SKILLS</h2>
                 <div className="skills-icons-container">
+                    <div
+                        className={`marquee-relevent-skills stagger-fade-up ${skillsInView ? 'visible' : ''}`}
+                        style={{ transitionDelay: '0s' }}
+                    >
+                        <Marquee pauseOnHover gradient={true} speed={50} direction="left" className='marquee'>
+                            <div className="each-mar-skills">
+                                <h1>MERN</h1>
+                            </div>
+                            <div className="each-mar-skills">
+                                <h1>DSA</h1>
+                            </div>
+                            <div className="each-mar-skills">
+                                <h1>UI/UX</h1>
+                            </div>
+                        </Marquee>
+                    </div>
                     <SkillsShowCase />
                 </div>
             </div>

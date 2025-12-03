@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 15%;
+  width: 18%;
   height: 120px;
   /* margin-right: 150px; */
   padding: 10px;
@@ -53,19 +53,23 @@
   transform: translateY(0) scale(1);
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 762px) {
   .each-marquee {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
+    width: 10% !important;
     height: 120px;
     padding: 12px;
     background: rgb(255, 255, 255);
     border: 1px solid rgb(220, 220, 220);
     border-radius: 10px;
-    margin: 20px;
+  }
+
+  .skills-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
   }
 }

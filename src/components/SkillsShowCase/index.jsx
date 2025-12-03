@@ -1,5 +1,6 @@
 import './index.css'
 import { useInView } from 'react-intersection-observer'
+import Marquee from "react-fast-marquee";
 
 const SkillsShowCase = () => {
     const { ref: skillsRef, inView: skillsInView } = useInView({
